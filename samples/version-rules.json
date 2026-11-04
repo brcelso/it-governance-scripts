@@ -1,0 +1,27 @@
+{
+  "name": "Example fleet version policy",
+  "version": "1.0",
+  "description": "Fictitious rules for samples and tests. Host names such as PC-EXAMPLE-01 are not real machines.",
+  "software": [
+    {
+      "name": "Example Browser",
+      "gold": "122.0.1",
+      "tolerance": "0.0.5",
+      "os": ["Windows 10*", "Windows 11*"]
+    },
+    {
+      "name": "Example Endpoint Agent",
+      "gold": "auto",
+      "auto": "most-common",
+      "tolerance": "0.0.1",
+      "os": ["Windows*"]
+    },
+    {
+      "name": "Example Pdf Reader",
+      "gold": "auto",
+      "auto": "latest",
+      "tolerance": "0",
+      "os": []
+    }
+  ]
+}

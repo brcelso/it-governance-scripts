@@ -1,0 +1,14 @@
+hostname,software,version,os,online
+PC-EXAMPLE-01,Example Browser,122.0.3,Windows 11,true
+PC-EXAMPLE-01,Example Endpoint Agent,6.2.0,Windows 11,true
+PC-EXAMPLE-01,Example Pdf Reader,11.0.0,Windows 11,true
+PC-EXAMPLE-02,Example Browser,122.0.0,Windows 11,true
+PC-EXAMPLE-02,Example Endpoint Agent,6.2.0,Windows 11,true
+PC-EXAMPLE-03,Example Browser,121.0.0,Windows 10,true
+PC-EXAMPLE-03,Example Endpoint Agent,6.1.0,Windows 10,true
+PC-EXAMPLE-03,Example Pdf Reader,12.1.0,Windows 10,true
+PC-EXAMPLE-04,Example Browser,120.0.0,Windows 11,false
+LAPTOP-EXAMPLE-05,Example Browser,installed,Windows 11,true
+LAPTOP-EXAMPLE-05,Example Endpoint Agent,6.2.0,Windows 11,true
+PC-EXAMPLE-06,Example Browser,122.0.1,Windows 8.1,true
+PC-EXAMPLE-06,Example Pdf Reader,9.0.0,Windows 8.1,true

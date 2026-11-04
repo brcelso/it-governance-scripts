@@ -1,0 +1,43 @@
+{
+  "name": "Example workstation software policy",
+  "version": "1.0",
+  "description": "Fictitious policy for samples and tests. It is not a production baseline.",
+  "allow": [
+    {
+      "name": "Microsoft Edge*",
+      "publisher": "Microsoft Corporation"
+    },
+    {
+      "name": "7-Zip",
+      "publisher": "Igor Pavlov",
+      "minVersion": "23.0.0"
+    },
+    {
+      "name": "Microsoft Visual C++*",
+      "publisher": "Microsoft*"
+    },
+    {
+      "name": "Example Endpoint Agent",
+      "publisher": "Example Security",
+      "minVersion": "5.0.0"
+    }
+  ],
+  "block": [
+    {
+      "name": "*Torrent*",
+      "reason": "Peer-to-peer file sharing is not approved for workstations."
+    },
+    {
+      "name": "Example Remote Tool",
+      "publisher": "*",
+      "reason": "Unapproved remote access software."
+    }
+  ],
+  "required": [
+    {
+      "name": "Example Endpoint Agent",
+      "publisher": "Example Security",
+      "minVersion": "5.0.0"
+    }
+  ]
+}

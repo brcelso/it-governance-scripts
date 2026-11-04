@@ -1,0 +1,29 @@
+﻿[
+  {
+    "software": "Example Browser",
+    "goldVersion": "122.0.1",
+    "source": "pinned",
+    "tolerance": "0.0.5",
+    "sampleSize": 3,
+    "voters": "online",
+    "os": "Windows 10*;Windows 11*"
+  },
+  {
+    "software": "Example Endpoint Agent",
+    "goldVersion": "6.2.0",
+    "source": "most-common",
+    "tolerance": "0.0.1",
+    "sampleSize": 4,
+    "voters": "online",
+    "os": "Windows*"
+  },
+  {
+    "software": "Example Pdf Reader",
+    "goldVersion": "12.1.0",
+    "source": "latest",
+    "tolerance": "0",
+    "sampleSize": 3,
+    "voters": "online",
+    "os": ""
+  }
+]

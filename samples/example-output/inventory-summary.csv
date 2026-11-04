@@ -1,0 +1,3 @@
+ComputerName,OperatingSystem,TotalMemoryGB,SerialNumber,LastBoot,LoggedOnUser,InstalledSoftwareCount,CompliantSoftware,NonCompliantSoftware,UnknownSoftware,UnapprovedAdmins,RealTimeProtection,SignatureAgeDays,BitLockerSummary,FirewallPublic,PendingReboot,LastUpdateInstalledOn,CollectionErrors
+PC-EXAMPLE-01,Windows 11 Enterprise,16.0,EXAMPLE-SERIAL-0001,2026-10-28T08:15:00Z,EXAMPLE\user01,7,4,2,1,1,True,1,C: FullyEncrypted/On,Enabled,False,2026-10-28T07:12:00Z,
+PC-EXAMPLE-02,Windows 10 Enterprise,8.0,EXAMPLE-SERIAL-0002,2026-09-02T18:40:00Z,EXAMPLE\user02,2,1,2,0,1,True,22,C: FullyDecrypted/Off,Disabled,True,2026-06-02T09:00:00Z,

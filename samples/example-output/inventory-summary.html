@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endpoint governance report</title>
+<style>
+body{font-family:Segoe UI,Calibri,sans-serif;margin:24px;color:#1c1c1c;background:#fff;}
+h1{font-size:1.6rem;margin:0 0 .25rem;} h2{font-size:1.15rem;margin:1.4rem 0 .4rem;}
+.subtitle,.note,footer{color:#444;} .note{font-size:.9rem;margin:0 0 .6rem;}
+.highlights{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 8px;}
+.highlight{border:1px solid #d5d5d5;border-radius:6px;padding:10px 14px;min-width:140px;}
+.highlight .label{display:block;font-size:.78rem;color:#555;} .highlight .value{font-size:1.25rem;font-weight:650;}
+table{border-collapse:collapse;width:100%;margin:0 0 1.2rem;font-size:.92rem;}
+th,td{border:1px solid #d8d8d8;padding:6px 8px;text-align:left;vertical-align:top;}
+th{background:#f3f5f7;} tr:nth-child(even){background:#fafafa;}
+.status-ok{color:#0d6b32;font-weight:650;} .status-bad{color:#a11;font-weight:650;} .status-review{color:#8a5a00;font-weight:650;}
+footer{margin-top:8px;font-size:.85rem;}
+</style>
+</head>
+<body>
+<h1>Endpoint governance report</h1>
+<p class="subtitle">Fictitious sample. Host names such as PC-EXAMPLE-01 are not real machines.</p>
+<p class="note">Generated 2026-11-01T11:30:00Z</p>
+<div class="highlights">
+<div class="highlight"><span class="label">Computers</span><span class="value">2</span></div>
+<div class="highlight"><span class="label">Installed titles</span><span class="value">9</span></div>
+<div class="highlight"><span class="label">Noncompliant software</span><span class="value">4</span></div>
+<div class="highlight"><span class="label">Unapproved admins</span><span class="value">2</span></div>
+<div class="highlight"><span class="label">Pending reboot</span><span class="value">1</span></div>
+<div class="highlight"><span class="label">Stale signatures</span><span class="value">1</span></div>
+</div>
+<h2>Summary</h2>
+<p class="note">One row per fictitious computer.</p>
+<table>
+<thead><tr><th>ComputerName</th><th>OperatingSystem</th><th>LoggedOnUser</th><th>InstalledSoftwareCount</th><th>NonCompliantSoftware</th><th>UnapprovedAdmins</th><th>RealTimeProtection</th><th>SignatureAgeDays</th><th>PendingReboot</th></tr></thead>
+<tbody>
+<tr><td>PC-EXAMPLE-01</td><td>Windows 11 Enterprise</td><td>EXAMPLE\user01</td><td>7</td><td>2</td><td>1</td><td>True</td><td>1</td><td>False</td></tr>
+<tr><td>PC-EXAMPLE-02</td><td>Windows 10 Enterprise</td><td>EXAMPLE\user02</td><td>2</td><td>2</td><td>1</td><td>True</td><td>22</td><td>True</td></tr>
+</tbody></table>
+<h2>Software compliance</h2>
+<p class="note">Unknown means the title was not on the allow list or the block list.</p>
+<table>
+<thead><tr><th>ComputerName</th><th>DisplayName</th><th>DisplayVersion</th><th>Publisher</th><th>Status</th><th>Reason</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td>PC-EXAMPLE-01</td><td>Example Remote Tool</td><td>2.1.0</td><td>Example Remote LLC</td><td class="status-bad">NonCompliant</td><td>Blocked</td><td>Unapproved remote access software.</td></tr>
+<tr><td>PC-EXAMPLE-01</td><td>Nice Torrent Client</td><td>1.0.0</td><td>Fictional Apps</td><td class="status-bad">NonCompliant</td><td>Blocked</td><td>Peer-to-peer file sharing is not approved for workstations.</td></tr>
+<tr><td>PC-EXAMPLE-01</td><td>Python 3.12.6</td><td>3.12.6</td><td>Python Software Foundation</td><td class="status-review">Unknown</td><td>NotListed</td><td>Not on the allow list or the block list.</td></tr>
+<tr><td>PC-EXAMPLE-02</td><td>7-Zip</td><td>19.0.0.0</td><td>Igor Pavlov</td><td class="status-bad">NonCompliant</td><td>BelowMinimumVersion</td><td>Installed version 19.0.0.0 is below minimum 23.0.0.</td></tr>
+<tr><td>PC-EXAMPLE-02</td><td>Example Endpoint Agent</td><td></td><td>Example Security</td><td class="status-bad">NonCompliant</td><td>RequiredMissing</td><td>Required software is not installed. Minimum version is 5.0.0.</td></tr>
+</tbody></table>
+<h2>Local administrators</h2>
+<p class="note">Unapproved means the account was not on the fictitious approved list.</p>
+<table>
+<thead><tr><th>ComputerName</th><th>MemberName</th><th>ObjectClass</th><th>ApprovalStatus</th></tr></thead>
+<tbody>
+<tr><td>PC-EXAMPLE-01</td><td>EXAMPLE\Domain Admins</td><td>Group</td><td class="status-ok">Approved</td></tr>
+<tr><td>PC-EXAMPLE-01</td><td>EXAMPLE\Endpoint-Admins</td><td>Group</td><td class="status-ok">Approved</td></tr>
+<tr><td>PC-EXAMPLE-01</td><td>PC-EXAMPLE-01\LocalAdmin</td><td>User</td><td class="status-ok">Approved</td></tr>
+<tr><td>PC-EXAMPLE-01</td><td>PC-EXAMPLE-01\user01</td><td>User</td><td class="status-bad">Unapproved</td></tr>
+<tr><td>PC-EXAMPLE-02</td><td>EXAMPLE\Domain Admins</td><td>Group</td><td class="status-ok">Approved</td></tr>
+<tr><td>PC-EXAMPLE-02</td><td>PC-EXAMPLE-02\Administrator</td><td>User</td><td class="status-bad">Unapproved</td></tr>
+</tbody></table>
+<footer>Generated locally. Read-only endpoint governance evidence. Review the rows before sharing them.</footer>
+</body>
+</html>

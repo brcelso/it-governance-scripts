@@ -1,0 +1,10 @@
+ComputerName,DisplayName,DisplayVersion,Publisher,InstallDate,Scope,UninstallKey,CollectionError
+PC-EXAMPLE-01,7-Zip,24.8.0.0,Igor Pavlov,2026-03-12,HKLM64,{EXAMPLE-7ZIP},
+PC-EXAMPLE-01,Example Endpoint Agent,5.4.1.0,Example Security,2026-08-01,HKLM64,{EXAMPLE-AGENT},
+PC-EXAMPLE-01,Example Remote Tool,2.1.0,Example Remote LLC,2026-01-20,HKLM32,{EXAMPLE-REMOTE},
+PC-EXAMPLE-01,Microsoft Edge,131.0.2903.86,Microsoft Corporation,2026-10-02,HKLM64,{EXAMPLE-EDGE},
+PC-EXAMPLE-01,Microsoft Visual C++ 2015-2022 Redistributable (x64),14.40.33810.0,Microsoft Corporation,2026-04-18,HKLM64,{EXAMPLE-VC},
+PC-EXAMPLE-01,Nice Torrent Client,1.0.0,Fictional Apps,2025-11-03,HKCU,{EXAMPLE-TORRENT},
+PC-EXAMPLE-01,Python 3.12.6,3.12.6,Python Software Foundation,2026-05-09,HKLM64,{EXAMPLE-PYTHON},
+PC-EXAMPLE-02,7-Zip,19.0.0.0,Igor Pavlov,2024-02-11,HKLM64,{EXAMPLE-7ZIP},
+PC-EXAMPLE-02,Microsoft Edge,130.0.1.0,Microsoft Corporation,2026-07-14,HKLM64,{EXAMPLE-EDGE},
