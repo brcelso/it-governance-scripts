@@ -1,0 +1,207 @@
+﻿{
+  "version": 1,
+  "description": "Persistent remediation queue. Items move from pending to sent, then to confirmed or abandoned. The sent state is bookkeeping only and does not deploy software.",
+  "updatedAt": "2026-11-04T18:32:22Z",
+  "items": [
+    {
+      "id": "laptop-example-05|example pdf reader",
+      "hostname": "LAPTOP-EXAMPLE-05",
+      "software": "Example Pdf Reader",
+      "state": "pending",
+      "status": "Missing",
+      "reason": "NotInstalled",
+      "observedVersion": "",
+      "goldVersion": "12.1.0",
+      "os": "Windows 11",
+      "online": "true",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the software is missing."
+        }
+      ]
+    },
+    {
+      "id": "pc-example-01|example pdf reader",
+      "hostname": "PC-EXAMPLE-01",
+      "software": "Example Pdf Reader",
+      "state": "pending",
+      "status": "Outdated",
+      "reason": "OlderThanTolerance",
+      "observedVersion": "11.0.0",
+      "goldVersion": "12.1.0",
+      "os": "Windows 11",
+      "online": "true",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the installation is out of date."
+        }
+      ]
+    },
+    {
+      "id": "pc-example-02|example pdf reader",
+      "hostname": "PC-EXAMPLE-02",
+      "software": "Example Pdf Reader",
+      "state": "pending",
+      "status": "Missing",
+      "reason": "NotInstalled",
+      "observedVersion": "",
+      "goldVersion": "12.1.0",
+      "os": "Windows 11",
+      "online": "true",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the software is missing."
+        }
+      ]
+    },
+    {
+      "id": "pc-example-03|example browser",
+      "hostname": "PC-EXAMPLE-03",
+      "software": "Example Browser",
+      "state": "pending",
+      "status": "Outdated",
+      "reason": "OlderThanTolerance",
+      "observedVersion": "121.0.0",
+      "goldVersion": "122.0.1",
+      "os": "Windows 10",
+      "online": "true",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the installation is out of date."
+        }
+      ]
+    },
+    {
+      "id": "pc-example-03|example endpoint agent",
+      "hostname": "PC-EXAMPLE-03",
+      "software": "Example Endpoint Agent",
+      "state": "pending",
+      "status": "Outdated",
+      "reason": "OlderThanTolerance",
+      "observedVersion": "6.1.0",
+      "goldVersion": "6.2.0",
+      "os": "Windows 10",
+      "online": "true",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the installation is out of date."
+        }
+      ]
+    },
+    {
+      "id": "pc-example-04|example browser",
+      "hostname": "PC-EXAMPLE-04",
+      "software": "Example Browser",
+      "state": "pending",
+      "status": "Outdated",
+      "reason": "OlderThanTolerance",
+      "observedVersion": "120.0.0",
+      "goldVersion": "122.0.1",
+      "os": "Windows 11",
+      "online": "false",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the installation is out of date."
+        }
+      ]
+    },
+    {
+      "id": "pc-example-06|example endpoint agent",
+      "hostname": "PC-EXAMPLE-06",
+      "software": "Example Endpoint Agent",
+      "state": "pending",
+      "status": "Missing",
+      "reason": "NotInstalled",
+      "observedVersion": "",
+      "goldVersion": "6.2.0",
+      "os": "Windows 8.1",
+      "online": "true",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the software is missing."
+        }
+      ]
+    },
+    {
+      "id": "pc-example-06|example pdf reader",
+      "hostname": "PC-EXAMPLE-06",
+      "software": "Example Pdf Reader",
+      "state": "pending",
+      "status": "Outdated",
+      "reason": "OlderThanTolerance",
+      "observedVersion": "9.0.0",
+      "goldVersion": "12.1.0",
+      "os": "Windows 8.1",
+      "online": "true",
+      "deployed": false,
+      "createdAt": "2026-11-04T18:32:22Z",
+      "updatedAt": "2026-11-04T18:32:22Z",
+      "sentAt": null,
+      "closedAt": null,
+      "history": [
+        {
+          "at": "2026-11-04T18:32:22Z",
+          "from": null,
+          "to": "pending",
+          "note": "Queued because the installation is out of date."
+        }
+      ]
+    }
+  ]
+}

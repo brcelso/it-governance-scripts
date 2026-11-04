@@ -1,0 +1,8 @@
+{
+  "description": "Fictitious approved members of the local Administrators group. These accounts are examples, not a real directory.",
+  "approvedAccounts": [
+    "EXAMPLE\\Domain Admins",
+    "EXAMPLE\\Endpoint-Admins",
+    "PC-EXAMPLE-01\\LocalAdmin"
+  ]
+}

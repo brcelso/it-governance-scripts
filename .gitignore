@@ -1,0 +1,15 @@
+# Generated collections and reports
+/output/
+/reports/
+
+# Test and analyzer artifacts
+/TestResults/
+*.Tests.Result.xml
+testResults.xml
+
+# Local logs and editor files
+*.log
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
